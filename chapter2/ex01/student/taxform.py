@@ -31,7 +31,7 @@ numDependents = int(input("Enter the number of dependents: "))
 # Compute the income tax
 taxableIncome = grossIncome - STANDARD_DEDUCTION - \
                 DEPENDENT_DEDUCTION * numDependents
-incomeTax = taxableIncome * TAX_RATE
+incomeTax = round(taxableIncome * TAX_RATE, 2)
          
 # Display the income tax
 print("The income tax is $" + str(incomeTax))
