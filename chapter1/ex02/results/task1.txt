@@ -1,18 +1,12 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: Program outputs 12.0 when user inputs 2 and 6
-Reason: Unable to find '['12.0']' in the program's output.
-Enter the width: Enter the height: The area is:  8.0  square units
-.
-Error : AssertionError - Unable to find a number close enough to 12.0 (+/-0.00) in the program's output.
-Timestamp: 2026-09-07 20:30:48.549819
+Reason: 12.0 was found in the program's output.None
+Timestamp: 2026-09-07 20:31:32.632321
 
-Status: FAILED!
+Status: PASSED!
 Check: 2
 Test: Program outputs 6174.0 when user inputs 98 and 63
-Reason: Unable to find '['6174.0']' in the program's output.
-Enter the width: Enter the height: The area is:  161.0  square units
-.
-Error : AssertionError - Unable to find a number close enough to 6174.0 (+/-0.00) in the program's output.
-Timestamp: 2026-09-07 20:30:48.564286
+Reason: 6174.0 was found in the program's output.None
+Timestamp: 2026-09-07 20:31:32.646861
