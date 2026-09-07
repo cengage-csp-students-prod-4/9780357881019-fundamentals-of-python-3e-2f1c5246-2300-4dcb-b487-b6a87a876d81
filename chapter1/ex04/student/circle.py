@@ -12,6 +12,6 @@ print('The area is ', area, ' square units.')
 
 radius = float(input("Enter circle's radius: "))
 
-area = 3.141 * radius ** 2
+area = 3.14 * radius ** 2
 
 print('The area is ', area, ' square units.')
