@@ -6,16 +6,16 @@ Reason: Unable to find '['3.14 square units']' in the program's output.
 Enter circle's radius: The area is  3.14  square units.
 .
 Error : AssertionError - Unable to find 3.14 square units in the program's output.
-Timestamp: 2026-09-07 20:55:38.393372
+Timestamp: 2026-09-07 20:57:12.243006
 
 Status: PASSED!
 Check: 2
 Test: Program outputs '28.26 square units' when user inputs 3
 Reason: '28.26 square units' was found in the program's output.None
-Timestamp: 2026-09-07 20:55:38.408514
+Timestamp: 2026-09-07 20:57:12.257677
 
 Status: PASSED!
 Check: 3
 Test: Program outputs '1.76 square units' when user inputs 0.75
 Reason: '1.76 square units' was found in the program's output.None
-Timestamp: 2026-09-07 20:55:38.422551
+Timestamp: 2026-09-07 20:57:12.272214
