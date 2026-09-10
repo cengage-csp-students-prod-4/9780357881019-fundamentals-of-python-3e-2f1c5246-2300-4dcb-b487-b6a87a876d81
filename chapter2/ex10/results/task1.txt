@@ -1,0 +1,32 @@
+
+Status: PASSED!
+Check: 1
+Test: Outputs 290.0 when inputs are 7.25, 40, and 0
+Reason: Output included 290.0None
+Timestamp: 2026-09-10 21:45:09.882637
+
+Status: PASSED!
+Check: 2
+Test: Outputs 421.76 when inputs are 13.18, 32, and 0
+Reason: Output included 421.76None
+Timestamp: 2026-09-10 21:45:09.897692
+
+Status: FAILED!
+Reason: Unable to run employeepay.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter2/ex10/employeepay.py", line 19, in <module>
+    otHours = int(input('Enter the overtime hours: '))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '7.5'
+
+Timestamp: 2026-09-10 21:45:09.912386
+
+Status: FAILED!
+Reason: Unable to run employeepay.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter2/ex10/employeepay.py", line 19, in <module>
+    otHours = int(input('Enter the overtime hours: '))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '7.5'
+
+Timestamp: 2026-09-10 21:45:09.912450
