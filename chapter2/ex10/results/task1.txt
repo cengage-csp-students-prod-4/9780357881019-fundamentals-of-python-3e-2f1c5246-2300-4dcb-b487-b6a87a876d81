@@ -3,19 +3,19 @@ Status: PASSED!
 Check: 1
 Test: Outputs 290.0 when inputs are 7.25, 40, and 0
 Reason: Output included 290.0None
-Timestamp: 2026-09-10 21:47:00.348197
+Timestamp: 2026-09-10 21:48:02.562339
 
 Status: PASSED!
 Check: 2
 Test: Outputs 421.76 when inputs are 13.18, 32, and 0
 Reason: Output included 421.76None
-Timestamp: 2026-09-10 21:47:00.362785
+Timestamp: 2026-09-10 21:48:02.578622
 
 Status: FAILED!
 Check: 3
 Test: Outputs 675.48 when inputs are 13.18, 40, and 7.5
 Reason: Unable to find '['675.48']' in the program's output.
-Enter the wage: Enter the regular hours: Enter the overtime hours: The total weekly pay is $675.475
+Enter the wage: Enter the regular hours: Enter the overtime hours: The total weekly pay is 675.475
 .
 Error : AssertionError - Unable to find a number close enough to 675.48 (+/-0.00) in the program's output.
-Timestamp: 2026-09-10 21:47:00.377116
+Timestamp: 2026-09-10 21:48:02.594053

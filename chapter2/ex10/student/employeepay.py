@@ -22,4 +22,4 @@ regPay = regHours * wage
 
 totalPay = otPay + regPay
 
-print("The total weekly pay is $" + str(totalPay))
+print("The total weekly pay is " + str(totalPay))
