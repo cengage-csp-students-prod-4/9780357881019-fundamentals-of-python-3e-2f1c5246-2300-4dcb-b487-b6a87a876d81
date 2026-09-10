@@ -14,12 +14,12 @@ totalPay = '$' + str(otPay + regPay)
 print('The total weekly pay is', totalPay)
 """
 
-wage = float(input('Enter the wage: '))
-regHours = float(input('Enter the regular hours: '))
-otHours = float(input('Enter the overtime hours: '))
-otPay = otHours*(1.5*wage)
-regPay = regHours*wage
+wage = float(input("Enter the wage: "))
+regHours = float(input("Enter the regular hours: "))
+otHours = float(input("Enter the overtime hours: "))
+otPay = otHours * (1.5 * wage)
+regPay = regHours * wage
 
 totalPay = otPay + regPay
 
-print('The total weekly pay is $' + str(totalPay))
+print("The total weekly pay is $" + str(totalPay))
