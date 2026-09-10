@@ -20,6 +20,6 @@ otHours = float(input("Enter the overtime hours: "))
 otPay = otHours * (1.5 * wage)
 regPay = regHours * wage
 
-totalPay = otPay + regPay
+totalPay = round(otPay + regPay, 2)
 
-print("The total weekly pay is ", totalPay)
+print("The total weekly pay is $" + str(totalPay))
