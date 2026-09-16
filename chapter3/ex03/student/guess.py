@@ -23,11 +23,17 @@ for count in range(1, guessAmnt + 1):
     userGuess = input("Enter =, <, or >: ")
     if userGuess == "<" and smaller < larger and smaller != larger:
         smaller = compGuess + 1
+        if smaller > larger:
+            print("I'm out of guesses, and you cheated!")
+            break
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print("Guess #", str(count + 1) + ": Your number is", compGuess)
     elif userGuess == ">" and (smaller < larger and smaller != larger):
         larger = compGuess - 1
+        if smaller > larger:
+            print("I'm out of guesses, and you cheated!")
+            break
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print("Guess #", str(count + 1) + ": Your number is", compGuess)
