@@ -3,10 +3,10 @@ Status: PASSED!
 Check: 1
 Test: Program outputs 'triangle is equilateral' when user inputs 44, 44, and 44
 Reason: 'triangle is equilateral' was found in the program's output.None
-Timestamp: 2026-09-16 16:23:35.240669
+Timestamp: 2026-09-16 16:23:49.792068
 
 Status: PASSED!
 Check: 2
 Test: Program outputs 'triangle is not equilateral' when user inputs 44, 77, and 63
 Reason: 'triangle is not equilateral' was found in the program's output.None
-Timestamp: 2026-09-16 16:23:35.257115
+Timestamp: 2026-09-16 16:23:49.808176
