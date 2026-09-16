@@ -3,13 +3,13 @@ Status: PASSED!
 Check: 1
 Test: Outputs 'Hooray, I've got it in 1 tries!' on a correct first guess.
 Reason: None
-Timestamp: 2026-09-16 20:18:48.873402
+Timestamp: 2026-09-16 20:19:30.981629
 
 Status: PASSED!
 Check: 2
 Test: Outputs 'Hooray, I've got it in 2 tries!' on a correct second guess.
 Reason: None
-Timestamp: 2026-09-16 20:18:48.891301
+Timestamp: 2026-09-16 20:19:30.999335
 
 Status: FAILED!
 Check: 3
@@ -21,13 +21,13 @@ Enter =, <, or >: 9 10
 Guess # 2: Your number is 10
 Enter =, <, or >: 9 9
 Guess # 3: Your number is 9
-Enter =, <, or >: Error!
+Enter =, <, or >: No fair, you cheated :(
 .
 Error : AssertionError - 
-Timestamp: 2026-09-16 20:18:48.909087
+Timestamp: 2026-09-16 20:19:31.017265
 
 Status: PASSED!
 Check: 4
 Test: Outputs 'I'm out of guesses, and you cheated!' when you cheat.
 Reason: None
-Timestamp: 2026-09-16 20:18:48.934646
+Timestamp: 2026-09-16 20:19:31.039879
