@@ -14,8 +14,11 @@ print(guessAmnt)
 print('Guess #', str(count+1) + ': Your number is', compGuess)
 
 for count in range(1, guessAmnt+1):
-    if smaller > larger or count == guessAmnt:
-        print("I'm out of guesses, and you cheated!")
+    if smaller > larger:
+        print("I'm out of guesses :(")
+        break
+    elif count == guessAmnt:
+        print('No fair, you cheated :(')
         break
     userGuess = input('Enter =, <, or >: ')
     if userGuess == '<' and smaller < larger and smaller != larger:
