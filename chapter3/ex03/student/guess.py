@@ -9,28 +9,29 @@ compGuess = random.randint(smaller, larger)
 totNums = (larger - smaller) + 1
 guessAmnt = int(math.log(totNums, 2)) + 1
 count = 0
-print(guessAmnt)
 
 print('Guess #', str(count+1) + ': Your number is', compGuess)
 
 for count in range(1, guessAmnt+1):
+    userGuess = input('Enter =, <, or >: ')
+    print(userGuess)
     if smaller > larger:
         print("I'm out of guesses :(")
         break
     elif count == guessAmnt:
         print('No fair, you cheated :(')
         break
-    userGuess = input('Enter =, <, or >: ')
-    if userGuess == '<' and smaller < larger and smaller != larger:
+
+    if userGuess == '<':
         smaller = compGuess+1
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print('Guess #', str(count+1) + ': Your number is', compGuess)
-    elif userGuess == '>' and smaller < larger and smaller != larger:
+    elif userGuess == '>':
         larger = compGuess-1
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print('Guess #', str(count+1) + ': Your number is', compGuess)
-    elif userGuess == '=' and smaller < larger and smaller != larger:
+    elif userGuess == '=':
         print("Hooray, I've got it in", count, "tries!")
         break

@@ -3,31 +3,34 @@ Status: PASSED!
 Check: 1
 Test: Outputs 'Hooray, I've got it in 1 tries!' on a correct first guess.
 Reason: None
-Timestamp: 2026-09-16 20:19:30.981629
+Timestamp: 2026-09-16 20:47:25.927025
 
 Status: PASSED!
 Check: 2
 Test: Outputs 'Hooray, I've got it in 2 tries!' on a correct second guess.
 Reason: None
-Timestamp: 2026-09-16 20:19:30.999335
-
-Status: FAILED!
-Check: 3
-Test: Outputs 'Hooray, I've got it in 3 tries!' on a correct third guess.
-Reason: Unable to find '["I've got it in 3 tries"]' in the program's output.
-Enter the smaller number: Enter the larger number: 4
-Guess # 1: Your number is 8
-Enter =, <, or >: 9 10
-Guess # 2: Your number is 10
-Enter =, <, or >: 9 9
-Guess # 3: Your number is 9
-Enter =, <, or >: No fair, you cheated :(
-.
-Error : AssertionError - 
-Timestamp: 2026-09-16 20:19:31.017265
+Timestamp: 2026-09-16 20:47:25.949747
 
 Status: PASSED!
-Check: 4
-Test: Outputs 'I'm out of guesses, and you cheated!' when you cheat.
+Check: 3
+Test: Outputs 'Hooray, I've got it in 3 tries!' on a correct third guess.
 Reason: None
-Timestamp: 2026-09-16 20:19:31.039879
+Timestamp: 2026-09-16 20:47:25.969742
+
+Status: FAILED!
+Reason: Unable to run guess.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 16, in <module>
+    userGuess = input('Enter =, <, or >: ')
+EOFError: EOF when reading a line
+
+Timestamp: 2026-09-16 20:47:26.026921
+
+Status: FAILED!
+Reason: Unable to run guess.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 16, in <module>
+    userGuess = input('Enter =, <, or >: ')
+EOFError: EOF when reading a line
+
+Timestamp: 2026-09-16 20:47:26.027010
