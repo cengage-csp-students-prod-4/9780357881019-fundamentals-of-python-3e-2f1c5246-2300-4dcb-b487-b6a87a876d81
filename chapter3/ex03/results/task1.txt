@@ -3,43 +3,50 @@ Status: PASSED!
 Check: 1
 Test: Outputs 'Hooray, I've got it in 1 tries!' on a correct first guess.
 Reason: None
-Timestamp: 2026-09-16 21:27:11.345130
-
-Status: FAILED!
-Check: 2
-Test: Outputs 'Hooray, I've got it in 2 tries!' on a correct second guess.
-Reason: Unable to find '["I've got it in 2 tries"]' in the program's output.
-Enter the smaller number: Enter the larger number: 4
-Guess # 1: Your number is 10
-Enter =, <, or >: I'm out of guesses, and you cheated!
-.
-Error : AssertionError - 
-Timestamp: 2026-09-16 21:27:11.363463
+Timestamp: 2026-09-16 21:28:57.567008
 
 Status: FAILED!
 Reason: Unable to run guess.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex03/guess.py", line 29, in <module>
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 17, in <module>
+    userGuess = input("Enter =, <, or >: ")
+EOFError: EOF when reading a line
+
+Timestamp: 2026-09-16 21:28:57.615703
+
+Status: FAILED!
+Reason: Unable to run guess.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 17, in <module>
+    userGuess = input("Enter =, <, or >: ")
+EOFError: EOF when reading a line
+
+Timestamp: 2026-09-16 21:28:57.615796
+
+Status: FAILED!
+Reason: Unable to run guess.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 35, in <module>
     compGuess = random.randint(smaller, larger)
   File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
     raise ValueError(f"empty range in randint({a}, {b})")
 ValueError: empty range in randint(5, 4)
 
-Timestamp: 2026-09-16 21:27:11.410697
+Timestamp: 2026-09-16 21:28:57.676605
 
 Status: FAILED!
 Reason: Unable to run guess.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex03/guess.py", line 29, in <module>
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 35, in <module>
     compGuess = random.randint(smaller, larger)
   File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
     raise ValueError(f"empty range in randint({a}, {b})")
 ValueError: empty range in randint(5, 4)
 
-Timestamp: 2026-09-16 21:27:11.410775
+Timestamp: 2026-09-16 21:28:57.676678
 
 Status: PASSED!
 Check: 4
 Test: Outputs 'I'm out of guesses, and you cheated!' when you cheat.
 Reason: None
-Timestamp: 2026-09-16 21:27:11.437329
+Timestamp: 2026-09-16 21:28:57.694594
