@@ -3,35 +3,19 @@ Status: PASSED!
 Check: 1
 Test: Outputs 'Hooray, I've got it in 1 tries!' on a correct first guess.
 Reason: None
-Timestamp: 2026-09-16 19:52:51.506891
+Timestamp: 2026-09-16 19:53:12.092988
 
 Status: PASSED!
 Check: 2
 Test: Outputs 'Hooray, I've got it in 2 tries!' on a correct second guess.
 Reason: None
-Timestamp: 2026-09-16 19:52:51.526582
+Timestamp: 2026-09-16 19:53:12.122976
 
-Status: FAILED!
-Reason: Unable to run guess.py
-Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex03/guess.py", line 31, in <module>
-    compGuess = random.randint(smaller, larger)
-  File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
-    raise ValueError(f"empty range in randint({a}, {b})")
-ValueError: empty range in randint(10, 9)
-
-Timestamp: 2026-09-16 19:52:51.577480
-
-Status: FAILED!
-Reason: Unable to run guess.py
-Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex03/guess.py", line 31, in <module>
-    compGuess = random.randint(smaller, larger)
-  File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
-    raise ValueError(f"empty range in randint({a}, {b})")
-ValueError: empty range in randint(10, 9)
-
-Timestamp: 2026-09-16 19:52:51.577573
+Status: PASSED!
+Check: 3
+Test: Outputs 'Hooray, I've got it in 3 tries!' on a correct third guess.
+Reason: None
+Timestamp: 2026-09-16 19:53:12.153682
 
 Status: FAILED!
 Reason: Unable to run guess.py
@@ -42,7 +26,7 @@ Error: Traceback (most recent call last):
     raise ValueError(f"empty range in randint({a}, {b})")
 ValueError: empty range in randint(11, 10)
 
-Timestamp: 2026-09-16 19:52:51.676588
+Timestamp: 2026-09-16 19:53:12.210324
 
 Status: FAILED!
 Reason: Unable to run guess.py
@@ -53,4 +37,4 @@ Error: Traceback (most recent call last):
     raise ValueError(f"empty range in randint({a}, {b})")
 ValueError: empty range in randint(11, 10)
 
-Timestamp: 2026-09-16 19:52:51.676683
+Timestamp: 2026-09-16 19:53:12.210395
