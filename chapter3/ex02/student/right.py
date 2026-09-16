@@ -33,7 +33,7 @@ else:
             c = sideOne
         else:
             if sideOne == sideTwo and sideThree:
-                print('The triangle is an equalateral triangle')
+                print('The triangle is not a right triangle')
                 import sys
                 sys.exit()
 

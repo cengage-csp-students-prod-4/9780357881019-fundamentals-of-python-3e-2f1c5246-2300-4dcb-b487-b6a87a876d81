@@ -1,15 +1,12 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: Program outputs 'is not a right triangle' when user inputs 44, 44, and 44
-Reason: Unable to find '['is not a right triangle']' in the program's output.
-Enter the first side: Enter the second side: Enter the third side: The triangle is an equalateral triangle
-.
-Error : AssertionError - Unable to find is not a right triangle in the program's output.
-Timestamp: 2026-09-16 17:39:50.255983
+Reason: 'is not a right triangle' was found in the program's output.None
+Timestamp: 2026-09-16 17:41:18.735170
 
 Status: PASSED!
 Check: 2
 Test: Program outputs 'is a right triangle' when user inputs 3, 4, and 5
 Reason: 'is a right triangle' was found in the program's output.None
-Timestamp: 2026-09-16 17:39:50.272306
+Timestamp: 2026-09-16 17:41:18.751356
