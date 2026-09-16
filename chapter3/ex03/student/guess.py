@@ -31,6 +31,3 @@ for count in range(1, guessAmnt+1):
     elif userGuess == '=' and smaller < larger and smaller != larger:
         print("Hooray, I've got it in", count, "tries!")
         break
-    else:
-        print('Error!')
-        break
