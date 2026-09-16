@@ -3,38 +3,45 @@ Status: PASSED!
 Check: 1
 Test: Outputs 'Hooray, I've got it in 1 tries!' on a correct first guess.
 Reason: None
-Timestamp: 2026-09-16 22:01:48.381710
+Timestamp: 2026-09-16 22:03:04.369976
 
 Status: PASSED!
 Check: 2
 Test: Outputs 'Hooray, I've got it in 2 tries!' on a correct second guess.
 Reason: None
-Timestamp: 2026-09-16 22:01:48.400114
+Timestamp: 2026-09-16 22:03:04.387877
 
-Status: PASSED!
+Status: FAILED!
 Check: 3
 Test: Outputs 'Hooray, I've got it in 3 tries!' on a correct third guess.
-Reason: None
-Timestamp: 2026-09-16 22:01:48.418339
+Reason: Unable to find '["I've got it in 3 tries"]' in the program's output.
+Enter the smaller number: Enter the larger number: 4
+Guess # 1: Your number is 9
+Enter =, <, or >: 10 10
+Guess # 2: Your number is 10
+Hooray, I've got it in 2 tries!
+.
+Error : AssertionError - 
+Timestamp: 2026-09-16 22:03:04.406652
 
 Status: FAILED!
 Reason: Unable to run guess.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex03/guess.py", line 29, in <module>
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 28, in <module>
     compGuess = random.randint(smaller, larger)
   File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
     raise ValueError(f"empty range in randint({a}, {b})")
 ValueError: empty range in randint(11, 10)
 
-Timestamp: 2026-09-16 22:01:48.465487
+Timestamp: 2026-09-16 22:03:04.454370
 
 Status: FAILED!
 Reason: Unable to run guess.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex03/guess.py", line 29, in <module>
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 28, in <module>
     compGuess = random.randint(smaller, larger)
   File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
     raise ValueError(f"empty range in randint({a}, {b})")
 ValueError: empty range in randint(11, 10)
 
-Timestamp: 2026-09-16 22:01:48.465563
+Timestamp: 2026-09-16 22:03:04.454450

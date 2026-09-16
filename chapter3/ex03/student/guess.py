@@ -22,15 +22,13 @@ for count in range(1, guessAmnt + 1):
         break
 
     userGuess = input("Enter =, <, or >: ")
-    if userGuess == "<" and (smaller < larger and smaller != larger):
-        if smaller < larger and smaller != larger:
-            smaller = compGuess + 1
+    if userGuess == "<" and smaller < larger and smaller != larger:
+        smaller = compGuess + 1
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print("Guess #", str(count + 1) + ": Your number is", compGuess)
     elif userGuess == ">" and (smaller < larger and smaller != larger):
-        if smaller < larger and smaller != larger:
-            larger = compGuess - 1
+        larger = compGuess - 1
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print("Guess #", str(count + 1) + ": Your number is", compGuess)
