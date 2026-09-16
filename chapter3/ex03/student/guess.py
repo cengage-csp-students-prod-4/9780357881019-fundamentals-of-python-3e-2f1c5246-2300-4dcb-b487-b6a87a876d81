@@ -16,9 +16,6 @@ for count in range(1, guessAmnt + 1):
     if smaller > larger or count == guessAmnt:
         print("I'm out of guesses, and you cheated!")
         break
-    elif smaller == larger:
-        print("Hooray, I've got it in", count, "tries!")
-        break
 
     userGuess = input("Enter =, <, or >: ")
     print('USER INPUT: ', userGuess)
