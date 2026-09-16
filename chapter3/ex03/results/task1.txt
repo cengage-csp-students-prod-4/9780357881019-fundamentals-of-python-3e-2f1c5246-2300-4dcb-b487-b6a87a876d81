@@ -3,22 +3,30 @@ Status: PASSED!
 Check: 1
 Test: Outputs 'Hooray, I've got it in 1 tries!' on a correct first guess.
 Reason: None
-Timestamp: 2026-09-16 22:17:15.069036
+Timestamp: 2026-09-16 22:17:26.792886
 
 Status: PASSED!
 Check: 2
 Test: Outputs 'Hooray, I've got it in 2 tries!' on a correct second guess.
 Reason: None
-Timestamp: 2026-09-16 22:17:15.087485
+Timestamp: 2026-09-16 22:17:26.810846
 
-Status: PASSED!
+Status: FAILED!
 Check: 3
 Test: Outputs 'Hooray, I've got it in 3 tries!' on a correct third guess.
-Reason: None
-Timestamp: 2026-09-16 22:17:15.105493
+Reason: Unable to find '["I've got it in 3 tries"]' in the program's output.
+Enter the smaller number: Enter the larger number: Guess # 1: Your number is 3
+Enter =, <, or >: USER INPUT:  <
+4 10
+Guess # 2: Your number is 4
+Enter =, <, or >: USER INPUT:  >
+I'm out of guesses, and you cheated!
+.
+Error : AssertionError - 
+Timestamp: 2026-09-16 22:17:26.828477
 
 Status: PASSED!
 Check: 4
 Test: Outputs 'I'm out of guesses, and you cheated!' when you cheat.
 Reason: None
-Timestamp: 2026-09-16 22:17:15.123232
+Timestamp: 2026-09-16 22:17:26.846497
