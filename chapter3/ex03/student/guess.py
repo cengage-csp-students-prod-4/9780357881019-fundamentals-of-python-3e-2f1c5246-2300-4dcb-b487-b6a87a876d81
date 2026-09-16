@@ -21,6 +21,7 @@ for count in range(1, guessAmnt + 1):
         break
 
     userGuess = input("Enter =, <, or >: ")
+    print('USER INPUT: ', userGuess)
     if userGuess == "<" and smaller < larger and smaller != larger:
         smaller = compGuess + 1
         if smaller > larger:
