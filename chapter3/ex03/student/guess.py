@@ -19,17 +19,18 @@ print('Your number is', compGuess)
 
 for count in range(1, guessAmnt+1):
     userGuess = input('Enter =, <, or >: ')
-    if userGuess == '<':
+    if userGuess == '<' and smaller < larger and smaller != larger:
         smaller = compGuess+1
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
+        print(smaller, larger, compGuess)
         print('Your number is', compGuess)
-    elif userGuess == '>':
+    elif userGuess == '>' and smaller < larger and smaller != larger:
         larger = compGuess-1
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print('Your number is', compGuess)
-    elif userGuess == '=':
+    elif userGuess == '=' and smaller < larger and smaller != larger:
         print("Hooray, I've got it in", count, "tries!")
         break
     else:
