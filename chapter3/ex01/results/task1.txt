@@ -6,7 +6,7 @@ Reason: Unable to find '['triangle is equilateral']' in the program's output.
 Enter the first side: Enter the second side: Enter the third side: triangle is equalateral
 .
 Error : AssertionError - Unable to find triangle is equilateral in the program's output.
-Timestamp: 2026-09-16 16:17:51.816320
+Timestamp: 2026-09-16 16:18:28.210734
 
 Status: FAILED!
 Check: 2
@@ -15,4 +15,4 @@ Reason: Unable to find '['triangle is not equilateral']' in the program's output
 Enter the first side: Enter the second side: Enter the third side: triangle is not equalateral
 .
 Error : AssertionError - Unable to find triangle is not equilateral in the program's output.
-Timestamp: 2026-09-16 16:17:51.842278
+Timestamp: 2026-09-16 16:18:28.227384
