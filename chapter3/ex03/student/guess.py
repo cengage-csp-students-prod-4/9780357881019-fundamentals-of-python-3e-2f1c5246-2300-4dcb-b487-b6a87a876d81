@@ -14,26 +14,28 @@ print(guessAmnt)
 print("Guess #", str(count + 1) + ": Your number is", compGuess)
 
 for count in range(1, guessAmnt + 1):
-    userGuess = input("Enter =, <, or >: ")
-    if (
-        smaller > larger
-        or count == guessAmnt
-        or userGuess == "<"
-        and compGuess == larger
-    ):
+    if smaller > larger or count == guessAmnt:
         print("I'm out of guesses, and you cheated!")
         break
+    elif smaller == larger:
+        print("Hooray, I've got it in", count, "tries!")
+        break
 
-    if userGuess == "<" and smaller < larger and smaller != larger:
-        smaller = compGuess + 1
+    userGuess = input("Enter =, <, or >: ")
+    if userGuess == "<" and (smaller < larger and smaller != larger):
+        print('test: ', smaller, larger)
+        if smaller < larger and smaller != larger:
+            smaller = compGuess + 1
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print("Guess #", str(count + 1) + ": Your number is", compGuess)
-    elif userGuess == ">" and smaller < larger and smaller != larger:
-        larger = compGuess - 1
+    elif userGuess == ">" and (smaller < larger and smaller != larger):
+        print('test: ', smaller, larger)
+        if smaller < larger and smaller != larger:
+            larger = compGuess - 1
         print(smaller, larger)
         compGuess = random.randint(smaller, larger)
         print("Guess #", str(count + 1) + ": Your number is", compGuess)
-    elif userGuess == "=" and smaller < larger:
+    elif userGuess == "=" or smaller == larger:
         print("Hooray, I've got it in", count, "tries!")
         break
