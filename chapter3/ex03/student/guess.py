@@ -9,7 +9,6 @@ compGuess = random.randint(smaller, larger)
 totNums = (larger - smaller) + 1
 guessAmnt = int(math.log(totNums, 2)) + 1
 count = 0
-print(guessAmnt)
 
 print("Guess #", str(count + 1) + ": Your number is", compGuess)
 
