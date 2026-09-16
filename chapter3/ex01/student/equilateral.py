@@ -18,6 +18,6 @@ sideTwo = int(input('Enter the second side: '))
 sideThree = int(input('Enter the third side: '))
 
 if sideOne == sideTwo and sideOne == sideThree and sideTwo == sideThree:
-    print("triangle is equalateral")
+    print("'triangle is equalateral'")
 else:
-    print("triangle is not equalateral")
+    print("'triangle is not equalateral'")
