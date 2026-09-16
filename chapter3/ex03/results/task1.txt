@@ -1,0 +1,44 @@
+
+Status: PASSED!
+Check: 1
+Test: Outputs 'Hooray, I've got it in 1 tries!' on a correct first guess.
+Reason: None
+Timestamp: 2026-09-16 19:51:53.352566
+
+Status: PASSED!
+Check: 2
+Test: Outputs 'Hooray, I've got it in 2 tries!' on a correct second guess.
+Reason: None
+Timestamp: 2026-09-16 19:51:53.381305
+
+Status: PASSED!
+Check: 3
+Test: Outputs 'Hooray, I've got it in 3 tries!' on a correct third guess.
+Reason: None
+Timestamp: 2026-09-16 19:51:53.411997
+
+Status: FAILED!
+Check: 4
+Test: Outputs 'I'm out of guesses, and you cheated!' when you cheat.
+Reason: Unable to find '['you cheated']' in the program's output.
+Enter the smaller number: Enter the larger number: smaller:
+1
+larger:
+10
+compGuess:
+3
+totNums:
+10
+guessAmnt:
+4
+Your number is 3
+Enter =, <, or >: 4 10
+Your number is 6
+Enter =, <, or >: 7 10
+Your number is 7
+Enter =, <, or >: 8 10
+Your number is 8
+I'm out of guesses, I lose!
+.
+Error : AssertionError - 
+Timestamp: 2026-09-16 19:51:53.447327
