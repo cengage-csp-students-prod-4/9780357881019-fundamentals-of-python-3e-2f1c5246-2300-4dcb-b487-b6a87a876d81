@@ -15,12 +15,6 @@ print('Guess #', str(count+1) + ': Your number is', compGuess)
 for count in range(1, guessAmnt+1):
     userGuess = input('Enter =, <, or >: ')
     print(userGuess)
-    if smaller > larger:
-        print("I'm out of guesses :(")
-        break
-    elif count == guessAmnt:
-        print('No fair, you cheated :(')
-        break
 
     if userGuess == '<':
         smaller = compGuess+1
@@ -34,4 +28,11 @@ for count in range(1, guessAmnt+1):
         print('Guess #', str(count+1) + ': Your number is', compGuess)
     elif userGuess == '=':
         print("Hooray, I've got it in", count, "tries!")
+        break
+
+    if smaller > larger:
+        print('No fair, you cheated :(')
+        break
+    elif count == guessAmnt:
+        print("I'm out of guesses :(")
         break

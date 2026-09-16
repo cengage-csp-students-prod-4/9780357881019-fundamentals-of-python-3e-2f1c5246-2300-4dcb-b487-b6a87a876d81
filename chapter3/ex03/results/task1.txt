@@ -3,34 +3,54 @@ Status: PASSED!
 Check: 1
 Test: Outputs 'Hooray, I've got it in 1 tries!' on a correct first guess.
 Reason: None
-Timestamp: 2026-09-16 20:47:25.927025
+Timestamp: 2026-09-16 20:51:39.787288
 
 Status: PASSED!
 Check: 2
 Test: Outputs 'Hooray, I've got it in 2 tries!' on a correct second guess.
 Reason: None
-Timestamp: 2026-09-16 20:47:25.949747
-
-Status: PASSED!
-Check: 3
-Test: Outputs 'Hooray, I've got it in 3 tries!' on a correct third guess.
-Reason: None
-Timestamp: 2026-09-16 20:47:25.969742
+Timestamp: 2026-09-16 20:51:39.807427
 
 Status: FAILED!
 Reason: Unable to run guess.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex03/guess.py", line 16, in <module>
-    userGuess = input('Enter =, <, or >: ')
-EOFError: EOF when reading a line
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 27, in <module>
+    compGuess = random.randint(smaller, larger)
+  File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
+    raise ValueError(f"empty range in randint({a}, {b})")
+ValueError: empty range in randint(9, 8)
 
-Timestamp: 2026-09-16 20:47:26.026921
+Timestamp: 2026-09-16 20:51:39.861458
 
 Status: FAILED!
 Reason: Unable to run guess.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex03/guess.py", line 16, in <module>
-    userGuess = input('Enter =, <, or >: ')
-EOFError: EOF when reading a line
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 27, in <module>
+    compGuess = random.randint(smaller, larger)
+  File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
+    raise ValueError(f"empty range in randint({a}, {b})")
+ValueError: empty range in randint(9, 8)
 
-Timestamp: 2026-09-16 20:47:26.027010
+Timestamp: 2026-09-16 20:51:39.861559
+
+Status: FAILED!
+Reason: Unable to run guess.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 22, in <module>
+    compGuess = random.randint(smaller, larger)
+  File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
+    raise ValueError(f"empty range in randint({a}, {b})")
+ValueError: empty range in randint(11, 10)
+
+Timestamp: 2026-09-16 20:51:39.911328
+
+Status: FAILED!
+Reason: Unable to run guess.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/ex03/guess.py", line 22, in <module>
+    compGuess = random.randint(smaller, larger)
+  File "/usr/local/python/3.14.2/lib/python3.14/random.py", line 341, in randint
+    raise ValueError(f"empty range in randint({a}, {b})")
+ValueError: empty range in randint(11, 10)
+
+Timestamp: 2026-09-16 20:51:39.911404
