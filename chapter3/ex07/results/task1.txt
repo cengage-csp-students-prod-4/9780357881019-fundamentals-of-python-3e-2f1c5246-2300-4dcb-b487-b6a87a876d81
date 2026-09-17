@@ -6,22 +6,22 @@ Reason: Unable to find '['1  20.00, 2  20.40, 3  20.81, 4  21.22, ...']' in the 
 Enter the starting salary: $Enter the annual % increase: Enter the number of years: 20.0
 Year | Salary
 -------------
-1  20.00
-2  20.40
-3  20.81
-4  21.22
-5  21.65
-6  22.08
-7  22.52
-8  22.97
-9  23.43
-10  23.90
+1  20.00,
+2  20.40,
+3  20.81,
+4  21.22,
+5  21.65,
+6  22.08,
+7  22.52,
+8  22.97,
+9  23.43,
+10  23.90,
 .
 Error : AssertionError - 
-Timestamp: 2026-09-17 22:20:07.369320
+Timestamp: 2026-09-17 22:23:34.883526
 
 Status: PASSED!
 Check: 2
 Test: Program outputs correct values when user inputs 44, 5, and 4
 Reason: correct values were found in the program's output.None
-Timestamp: 2026-09-17 22:20:07.386242
+Timestamp: 2026-09-17 22:23:34.898882
