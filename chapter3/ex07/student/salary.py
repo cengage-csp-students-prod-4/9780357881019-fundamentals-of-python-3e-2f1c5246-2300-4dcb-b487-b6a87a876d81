@@ -16,11 +16,14 @@ startSal = float(input('Enter the starting salary: $'))
 annPrcnt = float(input('Enter the annual % increase: '))/100
 years = int(input('Enter the number of years: '))
 totSal = startSal
-print(totSal)
+outputList = []
 
 print("""Year | Salary
 -------------""")
 
 for x in range(1, years+1):
-    print(x, "", f'{totSal:0.2f},')
+    rowString = f"{x}  {totSal:0.2f}"
+    outputList.append(rowString)
     totSal = float(totSal + totSal*annPrcnt)
+
+print(outputList)
