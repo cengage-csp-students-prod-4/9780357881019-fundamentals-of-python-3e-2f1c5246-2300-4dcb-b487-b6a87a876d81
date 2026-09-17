@@ -31,4 +31,4 @@ totOrgnsm = orgnsmNum
 for x in range(int(totHours/hourRt)):
     totOrgnsm = totOrgnsm * growthRt
 
-print('The total population is', totOrgnsm)
+print('The total population is', int(totOrgnsm))
