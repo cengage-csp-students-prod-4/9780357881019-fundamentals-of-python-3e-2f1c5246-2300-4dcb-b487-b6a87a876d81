@@ -3,10 +3,10 @@ Status: PASSED!
 Check: 1
 Test: Program outputs '4096' when user inputs 4, 2, 1, and 10
 Reason: '4096' was found in the program's output.None
-Timestamp: 2026-09-17 19:07:28.855009
+Timestamp: 2026-09-17 19:08:16.585707
 
 Status: PASSED!
 Check: 2
 Test: Program outputs '29' when user inputs 10, 1.2, 4, and 24
 Reason: '29' was found in the program's output.None
-Timestamp: 2026-09-17 19:07:28.871261
+Timestamp: 2026-09-17 19:08:16.601588
