@@ -22,5 +22,5 @@ print("""Year | Salary
 -------------""")
 
 for x in range(1, years+1):
-    print(x, totSal,)
-    totSal = float(round(totSal + totSal*annPrcnt, 2))
+    print(x, "", f'{totSal:0.2f}')
+    totSal = float(totSal + totSal*annPrcnt)
