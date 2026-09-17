@@ -23,4 +23,4 @@ for x in range(1, years+1):
     outputList.append(rowString)
     totSal = float(totSal + totSal*annPrcnt)
 
-print(outputList)
+print("['" + ", ".join(outputList) + "']")
