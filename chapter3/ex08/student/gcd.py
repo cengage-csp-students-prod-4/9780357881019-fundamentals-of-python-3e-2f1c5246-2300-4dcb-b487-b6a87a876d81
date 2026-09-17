@@ -17,10 +17,17 @@ print('largeNum')
 smallNum = int(input('Enter the smaller number: '))
 largeNum = int(input('Enter the larger number: '))
 remainder = int()
+count = 1
 
-while remainder > 0 or remainder != 0:
+while True:
+    if smallNum == 0:
+        break
+    print('Step '+str(count) + ':', largeNum, '/', smallNum, '=', largeNum/smallNum)
     remainder = largeNum/smallNum
+    print('Large Number =', smallNum)
     largeNum = smallNum
+    print('Small Number =', remainder)
     smallNum = remainder
+    count += 1
 
-print('The greatest common divisor is', smallNum)
+print('The greatest common divisor is', largeNum)
