@@ -1,4 +1,4 @@
-""""
+""" "
 Program: GCD Finder
 9-17-2026
 Michael Guillen
@@ -14,20 +14,20 @@ use a while loop checking if 'smallNum' == 0
 print('largeNum')
 """
 
-smallNum = int(input('Enter the smaller number: '))
-largeNum = int(input('Enter the larger number: '))
+smallNum = int(input("Enter the smaller number: "))
+largeNum = int(input("Enter the larger number: "))
 remainder = int()
 count = 1
 
 while True:
     if smallNum == 0:
         break
-    print('Step '+str(count) + ':', largeNum, '/', smallNum, '=', largeNum/smallNum)
-    remainder = largeNum/smallNum
-    print('Large Number =', smallNum)
+    print("Step " + str(count) + ":", largeNum, "/", smallNum, "=", largeNum / smallNum)
+    remainder = largeNum - (int(largeNum/smallNum) * smallNum)
+    print("Large Number =", smallNum)
     largeNum = smallNum
-    print('Small Number =', remainder)
+    print("Small Number =", remainder)
     smallNum = remainder
     count += 1
 
-print('The greatest common divisor is', largeNum)
+print("The greatest common divisor is", largeNum)
