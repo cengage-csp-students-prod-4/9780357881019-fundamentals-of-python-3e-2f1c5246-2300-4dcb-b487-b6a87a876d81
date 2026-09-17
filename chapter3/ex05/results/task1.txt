@@ -3,22 +3,13 @@ Status: PASSED!
 Check: 1
 Test: Program outputs '4096' when user inputs 4, 2, 1, and 10
 Reason: '4096' was found in the program's output.None
-Timestamp: 2026-09-17 19:03:33.023763
+Timestamp: 2026-09-17 19:05:04.912399
 
 Status: FAILED!
-Reason: Unable to run population.py
-Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex05/population.py", line 19, in <module>
-    growthRt = int(input('Enter the rate of growth [a real number > 1]: '))
-ValueError: invalid literal for int() with base 10: '1.2'
-
-Timestamp: 2026-09-17 19:03:33.069488
-
-Status: FAILED!
-Reason: Unable to run population.py
-Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/ex05/population.py", line 19, in <module>
-    growthRt = int(input('Enter the rate of growth [a real number > 1]: '))
-ValueError: invalid literal for int() with base 10: '1.2'
-
-Timestamp: 2026-09-17 19:03:33.069554
+Check: 2
+Test: Program outputs '29' when user inputs 10, 1.2, 4, and 24
+Reason: Unable to find '['29']' in the program's output.
+Enter the initial number of organisms: Enter the rate of growth [a real number > 1]: Enter the number of hours to achieve the rate of growth: Enter the total hours of growth: The total population is 29.85983999999999
+.
+Error : AssertionError - Unable to find a number close enough to 29 (+/-0.00) in the program's output.
+Timestamp: 2026-09-17 19:05:04.927641

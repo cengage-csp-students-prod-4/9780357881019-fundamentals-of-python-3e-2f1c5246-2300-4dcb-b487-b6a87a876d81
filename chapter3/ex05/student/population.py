@@ -16,7 +16,7 @@ print('The total population is', 'totOrgnsm')
 """
 
 orgnsmNum = int(input('Enter the initial number of organisms: '))
-growthRt = int(input('Enter the rate of growth [a real number > 1]: '))
+growthRt = float(input('Enter the rate of growth [a real number > 1]: '))
 if growthRt <= 1:
     import sys
     sys.exit("""
