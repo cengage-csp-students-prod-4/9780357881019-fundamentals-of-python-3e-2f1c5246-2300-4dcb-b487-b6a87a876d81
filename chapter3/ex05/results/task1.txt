@@ -3,7 +3,7 @@ Status: PASSED!
 Check: 1
 Test: Program outputs '4096' when user inputs 4, 2, 1, and 10
 Reason: '4096' was found in the program's output.None
-Timestamp: 2026-09-17 18:50:44.111935
+Timestamp: 2026-09-17 19:03:33.023763
 
 Status: FAILED!
 Reason: Unable to run population.py
@@ -12,7 +12,7 @@ Error: Traceback (most recent call last):
     growthRt = int(input('Enter the rate of growth [a real number > 1]: '))
 ValueError: invalid literal for int() with base 10: '1.2'
 
-Timestamp: 2026-09-17 18:50:44.161420
+Timestamp: 2026-09-17 19:03:33.069488
 
 Status: FAILED!
 Reason: Unable to run population.py
@@ -21,4 +21,4 @@ Error: Traceback (most recent call last):
     growthRt = int(input('Enter the rate of growth [a real number > 1]: '))
 ValueError: invalid literal for int() with base 10: '1.2'
 
-Timestamp: 2026-09-17 18:50:44.161514
+Timestamp: 2026-09-17 19:03:33.069554
