@@ -6,22 +6,31 @@ Reason: Unable to find '['1  20.00, 2  20.40, 3  20.81, 4  21.22, ...']' in the 
 Enter the starting salary: $Enter the annual % increase: Enter the number of years: 20.0
 Year | Salary
 -------------
-1 20.00, 
-2 20.40, 
-3 20.81, 
-4 21.23, 
-5 21.65, 
-6 22.08, 
-7 22.52, 
-8 22.97, 
-9 23.43, 
-10 23.90, 
+1 20.0
+2 20.4
+3 20.81
+4 21.23
+5 21.65
+6 22.08
+7 22.52
+8 22.97
+9 23.43
+10 23.9
 .
 Error : AssertionError - 
-Timestamp: 2026-09-17 22:17:47.052268
+Timestamp: 2026-09-17 22:18:09.001682
 
-Status: PASSED!
+Status: FAILED!
 Check: 2
 Test: Program outputs correct values when user inputs 44, 5, and 4
-Reason: correct values were found in the program's output.None
-Timestamp: 2026-09-17 22:17:47.070234
+Reason: Unable to find '['1  44.00, 2  46.20, 3  48.51, 4  50.94']' in the program's output.
+Enter the starting salary: $Enter the annual % increase: Enter the number of years: 44.0
+Year | Salary
+-------------
+1 44.0
+2 46.2
+3 48.51
+4 50.94
+.
+Error : AssertionError - 
+Timestamp: 2026-09-17 22:18:09.017051
