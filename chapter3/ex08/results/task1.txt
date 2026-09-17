@@ -3,25 +3,22 @@ Status: FAILED!
 Check: 1
 Test: Program outputs correct values when user inputs 35 and 100
 Reason: Unable to find '['The greatest common divisor is 5']' in the program's output.
-Enter the smaller number: Enter the larger number: The greatest common diviser is 35.0
+Enter the smaller number: Enter the larger number: The greatest common divisor is 35
 .
 Error : AssertionError - Unable to find The greatest common divisor is 5 in the program's output.
-Timestamp: 2026-09-17 23:11:28.285153
+Timestamp: 2026-09-17 23:12:39.087028
 
 Status: FAILED!
 Check: 2
 Test: Program outputs correct values when user inputs 12 and 44
 Reason: Unable to find '['The greatest common divisor is 4']' in the program's output.
-Enter the smaller number: Enter the larger number: The greatest common diviser is 12.0
+Enter the smaller number: Enter the larger number: The greatest common divisor is 12
 .
 Error : AssertionError - Unable to find The greatest common divisor is 4 in the program's output.
-Timestamp: 2026-09-17 23:11:28.300418
+Timestamp: 2026-09-17 23:12:39.102132
 
-Status: FAILED!
+Status: PASSED!
 Check: 3
 Test: Program outputs correct values when user inputs 22 and 76
-Reason: Unable to find '['The greatest common divisor is 2']' in the program's output.
-Enter the smaller number: Enter the larger number: The greatest common diviser is 22.0
-.
-Error : AssertionError - Unable to find The greatest common divisor is 2 in the program's output.
-Timestamp: 2026-09-17 23:11:28.315749
+Reason: 2 was found in the program's output.None
+Timestamp: 2026-09-17 23:12:39.117704
