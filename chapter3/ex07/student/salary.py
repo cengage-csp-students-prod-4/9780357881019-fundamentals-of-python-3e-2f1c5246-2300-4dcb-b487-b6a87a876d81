@@ -18,9 +18,6 @@ years = int(input('Enter the number of years: '))
 totSal = startSal
 outputList = []
 
-print("""Year | Salary
--------------""")
-
 for x in range(1, years+1):
     rowString = f"{x}  {totSal:0.2f}"
     outputList.append(rowString)
