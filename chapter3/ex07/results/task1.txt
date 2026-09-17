@@ -18,10 +18,10 @@ Year | Salary
 10 23.90
 .
 Error : AssertionError - 
-Timestamp: 2026-09-17 22:17:03.904095
+Timestamp: 2026-09-17 22:17:17.248333
 
 Status: PASSED!
 Check: 2
 Test: Program outputs correct values when user inputs 44, 5, and 4
 Reason: correct values were found in the program's output.None
-Timestamp: 2026-09-17 22:17:03.927639
+Timestamp: 2026-09-17 22:17:17.264105
