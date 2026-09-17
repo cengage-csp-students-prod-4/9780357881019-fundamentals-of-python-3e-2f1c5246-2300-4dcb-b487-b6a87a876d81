@@ -18,7 +18,7 @@ Year | Salary
 10 23.9
 .
 Error : AssertionError - 
-Timestamp: 2026-09-17 22:18:09.001682
+Timestamp: 2026-09-17 22:18:18.569183
 
 Status: FAILED!
 Check: 2
@@ -33,4 +33,4 @@ Year | Salary
 4 50.94
 .
 Error : AssertionError - 
-Timestamp: 2026-09-17 22:18:09.017051
+Timestamp: 2026-09-17 22:18:18.584939
