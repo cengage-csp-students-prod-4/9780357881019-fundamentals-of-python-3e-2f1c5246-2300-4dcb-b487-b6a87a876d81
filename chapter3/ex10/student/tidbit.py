@@ -27,6 +27,9 @@ mnthPrcRate = 0.05
 bal = prchPrc - (prchPrc * downPymnt)
 prcPerMnth = prchPrc * mnthPrcRate
 numMnths = round(bal / prcPerMnth)
+intrst = bal * (intRate/12)
+endPay = bal - prcPerMnth
+prncplPay = prcPerMnth - intrst
 
 print(
     f"{'|Month|':8s}"
@@ -38,7 +41,7 @@ print(
 )
 
 for curMnth in range(1, numMnths+1):
-    if curMnth == numMnths:
+    if bal < prcPerMnth:
         intrst = 0.00
         prncplPay = bal
         endPay = 0.00
