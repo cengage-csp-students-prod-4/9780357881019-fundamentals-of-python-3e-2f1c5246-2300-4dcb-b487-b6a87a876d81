@@ -26,7 +26,7 @@ intRate = 0.12
 mnthPrcRate = 0.05
 bal = prchPrc - (prchPrc * downPymnt)
 prcPerMnth = prchPrc * mnthPrcRate
-numMnths = bal / prcPerMnth
+numMnths = round(bal / prcPerMnth)
 
 print(
     f"{'|Month|':8s}"
@@ -37,10 +37,15 @@ print(
     f"{'|Ending Balance|':17s}"
 )
 
-for curMnth in range(1, int(numMnths)+1):
-    intrst = bal * (intRate/12)
-    prncplPay = prcPerMnth - intrst
-    endPay = bal - prcPerMnth
+for curMnth in range(1, numMnths+1):
+    if curMnth == numMnths:
+        intrst = 0.00
+        prncplPay = bal
+        endPay = 0.00
+    else:
+        intrst = bal * (intRate/12)
+        prncplPay = prcPerMnth - intrst
+        endPay = bal - prcPerMnth
 
     print(
         f"{curMnth:4d}"
