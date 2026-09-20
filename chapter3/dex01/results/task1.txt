@@ -1,38 +1,40 @@
 
 Status: FAILED!
-Check: 1
-Test: The program displays the average of 10 numbers.
-Reason: Unable to find '['5.5']' in the program's output.
-Enter test score number 1: current score: 1 |current total: 0
-Enter test score number 2: current score: 2 |current total: 1
-Enter test score number 3: current score: 3 |current total: 3
-Enter test score number 4: current score: 4 |current total: 6
-Enter test score number 5: current score: 5 |current total: 10
-Enter test score number 6: current score: 6 |current total: 15
-Enter test score number 7: current score: 7 |current total: 21
-Enter test score number 8: current score: 8 |current total: 28
-Enter test score number 9: current score: 9 |current total: 36
-Enter test score number 10: current score: 10 |current total: 45
-The average test score is 5.0
-.
-Error : AssertionError - 
-Timestamp: 2026-09-20 18:05:42.576460
+Reason: Unable to run computeAverage.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 7, in <module>
+    score = int(input("Enter test score number " + str(count) + ": "))
+                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line
+
+Timestamp: 2026-09-20 18:10:52.600330
 
 Status: FAILED!
-Check: 2
-Test: The program displays the average of 10 numbers.
-Reason: Unable to find '['42.0']' in the program's output.
-Enter test score number 1: current score: 42 |current total: 0
-Enter test score number 2: current score: 15 |current total: 42
-Enter test score number 3: current score: 78 |current total: 57
-Enter test score number 4: current score: 8 |current total: 135
-Enter test score number 5: current score: 63 |current total: 143
-Enter test score number 6: current score: 29 |current total: 206
-Enter test score number 7: current score: 51 |current total: 235
-Enter test score number 8: current score: 5 |current total: 286
-Enter test score number 9: current score: 37 |current total: 291
-Enter test score number 10: current score: 92 |current total: 328
-The average test score is 38.2
-.
-Error : AssertionError - 
-Timestamp: 2026-09-20 18:05:42.593231
+Reason: Unable to run computeAverage.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 7, in <module>
+    score = int(input("Enter test score number " + str(count) + ": "))
+                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line
+
+Timestamp: 2026-09-20 18:10:52.600419
+
+Status: FAILED!
+Reason: Unable to run computeAverage.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 7, in <module>
+    score = int(input("Enter test score number " + str(count) + ": "))
+                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line
+
+Timestamp: 2026-09-20 18:10:52.645746
+
+Status: FAILED!
+Reason: Unable to run computeAverage.py
+Error: Traceback (most recent call last):
+  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 7, in <module>
+    score = int(input("Enter test score number " + str(count) + ": "))
+                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line
+
+Timestamp: 2026-09-20 18:10:52.645812
