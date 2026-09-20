@@ -8,5 +8,5 @@ while count <= 10:
         total += score
 
     count += 1
-average = round(total / count-1, 1)
+average = round(total / 10, 1)
 print("The average test score is", average)
