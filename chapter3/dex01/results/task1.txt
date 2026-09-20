@@ -2,39 +2,39 @@
 Status: FAILED!
 Reason: Unable to run computeAverage.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 7, in <module>
+  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 4, in <module>
     score = int(input("Enter test score number " + str(count) + ": "))
                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 EOFError: EOF when reading a line
 
-Timestamp: 2026-09-20 18:10:52.600330
+Timestamp: 2026-09-20 18:15:08.348878
 
 Status: FAILED!
 Reason: Unable to run computeAverage.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 7, in <module>
+  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 4, in <module>
     score = int(input("Enter test score number " + str(count) + ": "))
                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 EOFError: EOF when reading a line
 
-Timestamp: 2026-09-20 18:10:52.600419
+Timestamp: 2026-09-20 18:15:08.348959
 
 Status: FAILED!
 Reason: Unable to run computeAverage.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 7, in <module>
+  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 4, in <module>
     score = int(input("Enter test score number " + str(count) + ": "))
                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 EOFError: EOF when reading a line
 
-Timestamp: 2026-09-20 18:10:52.645746
+Timestamp: 2026-09-20 18:15:08.415558
 
 Status: FAILED!
 Reason: Unable to run computeAverage.py
 Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 7, in <module>
+  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 4, in <module>
     score = int(input("Enter test score number " + str(count) + ": "))
                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 EOFError: EOF when reading a line
 
-Timestamp: 2026-09-20 18:10:52.645812
+Timestamp: 2026-09-20 18:15:08.415649
