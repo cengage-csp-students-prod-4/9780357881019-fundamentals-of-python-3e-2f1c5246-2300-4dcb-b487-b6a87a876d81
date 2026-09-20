@@ -3,16 +3,16 @@ Status: FAILED!
 Check: 1
 Test: The program displays the average of 10 numbers.
 Reason: Unable to find '['5.5']' in the program's output.
-Enter test score number 1: Enter test score number 2: Enter test score number 3: Enter test score number 4: Enter test score number 5: Enter test score number 6: Enter test score number 7: Enter test score number 8: Enter test score number 9: The average test score is 4.5
+Enter test score number 1: Enter test score number 2: Enter test score number 3: Enter test score number 4: Enter test score number 5: Enter test score number 6: Enter test score number 7: Enter test score number 8: Enter test score number 9: Enter test score number 10: The average test score is 5.0
 .
 Error : AssertionError - 
-Timestamp: 2026-09-20 05:14:03.336184
+Timestamp: 2026-09-20 17:51:31.832472
 
 Status: FAILED!
 Check: 2
 Test: The program displays the average of 10 numbers.
 Reason: Unable to find '['42.0']' in the program's output.
-Enter test score number 1: Enter test score number 2: Enter test score number 3: Enter test score number 4: Enter test score number 5: Enter test score number 6: Enter test score number 7: Enter test score number 8: Enter test score number 9: The average test score is 32.8
+Enter test score number 1: Enter test score number 2: Enter test score number 3: Enter test score number 4: Enter test score number 5: Enter test score number 6: Enter test score number 7: Enter test score number 8: Enter test score number 9: Enter test score number 10: The average test score is 38.18181818181818
 .
 Error : AssertionError - 
-Timestamp: 2026-09-20 05:14:03.362050
+Timestamp: 2026-09-20 17:51:31.854864
