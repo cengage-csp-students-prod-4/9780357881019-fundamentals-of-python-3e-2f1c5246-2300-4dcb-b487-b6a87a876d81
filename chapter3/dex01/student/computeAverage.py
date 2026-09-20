@@ -8,6 +8,7 @@ while count <= 10:
         total += score
 
     count += 1
-print(count-1)
-average = round(total / count-1, 1)
+print('count:', count-1)
+print('total:', total)
+average = round(total / (count-1), 1)
 print("The average test score is", average)
