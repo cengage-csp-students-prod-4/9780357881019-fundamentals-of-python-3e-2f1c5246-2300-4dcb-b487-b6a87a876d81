@@ -2,11 +2,11 @@ count = 1
 total = 0
 while count <= 10:
     score = int(input("Enter test score number " + str(count) + ": "))
-    print('current score:', score, '|current total:', total)
     if count == 1:
-            score = int(input("Enter test score number " + str(count) + ": "))
-            total = score
-    total += score
+        total = score
+    else:
+        total += score
+
     count += 1
-average = round(total / count, 1)
+average = round(total / count-1, 1)
 print("The average test score is", average)

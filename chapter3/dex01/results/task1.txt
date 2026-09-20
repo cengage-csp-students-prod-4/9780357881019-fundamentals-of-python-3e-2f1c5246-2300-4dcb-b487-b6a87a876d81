@@ -1,40 +1,18 @@
 
 Status: FAILED!
-Reason: Unable to run computeAverage.py
-Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 4, in <module>
-    score = int(input("Enter test score number " + str(count) + ": "))
-                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-EOFError: EOF when reading a line
-
-Timestamp: 2026-09-20 18:15:08.348878
-
-Status: FAILED!
-Reason: Unable to run computeAverage.py
-Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 4, in <module>
-    score = int(input("Enter test score number " + str(count) + ": "))
-                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-EOFError: EOF when reading a line
-
-Timestamp: 2026-09-20 18:15:08.348959
+Check: 1
+Test: The program displays the average of 10 numbers.
+Reason: Unable to find '['5.5']' in the program's output.
+Enter test score number 1: Enter test score number 2: Enter test score number 3: Enter test score number 4: Enter test score number 5: Enter test score number 6: Enter test score number 7: Enter test score number 8: Enter test score number 9: Enter test score number 10: The average test score is 4.0
+.
+Error : AssertionError - 
+Timestamp: 2026-09-20 18:27:53.372580
 
 Status: FAILED!
-Reason: Unable to run computeAverage.py
-Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 4, in <module>
-    score = int(input("Enter test score number " + str(count) + ": "))
-                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-EOFError: EOF when reading a line
-
-Timestamp: 2026-09-20 18:15:08.415558
-
-Status: FAILED!
-Reason: Unable to run computeAverage.py
-Error: Traceback (most recent call last):
-  File "/tmp/test/python/chapter3/dex01/computeAverage.py", line 4, in <module>
-    score = int(input("Enter test score number " + str(count) + ": "))
-                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-EOFError: EOF when reading a line
-
-Timestamp: 2026-09-20 18:15:08.415649
+Check: 2
+Test: The program displays the average of 10 numbers.
+Reason: Unable to find '['42.0']' in the program's output.
+Enter test score number 1: Enter test score number 2: Enter test score number 3: Enter test score number 4: Enter test score number 5: Enter test score number 6: Enter test score number 7: Enter test score number 8: Enter test score number 9: Enter test score number 10: The average test score is 37.2
+.
+Error : AssertionError - 
+Timestamp: 2026-09-20 18:27:53.388022
