@@ -20,10 +20,12 @@ words = len(text.split())
 
 # Count the syllables
 syllables = 0
-vowels = "aeiouAEIOU"
+vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 for word in text.split():
     for vowel in vowels:
-        syllables += word.count(vowel)
+        print(vowel+vowel)
+        if not vowel+vowel:
+            syllables += word.count(vowel)
     for ending in ['es', 'ed', 'e']:
         if word.endswith(ending):
             syllables -= 1
