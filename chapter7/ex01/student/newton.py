@@ -12,8 +12,8 @@ def main():
         if _input == "":
             break
         else:
-            print("The program's estimate is ", newton(int(_input)))
-            print("Python's estimate is ", math.sqrt(int(_input)))
+            print("The program's estimate is ", newton(float(_input)))
+            print("Python's estimate is ", math.sqrt(float(_input)))
 
 def newton(x, est = 1.0):
     tol = 0.0000001
@@ -24,4 +24,5 @@ def newton(x, est = 1.0):
     else:
         return est
 
-main()
+if __name__ == "__main__":
+    main()
