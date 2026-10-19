@@ -16,7 +16,7 @@ def main():
             print("Python's estimate is ", math.sqrt(float(_input)))
 
 def newton(x, est = 1.0):
-    tol = 0.0000001
+    tol = 0.000001
     est = (est + x / est) / 2
     diff = abs(x - est ** 2)
     if diff >= tol:
