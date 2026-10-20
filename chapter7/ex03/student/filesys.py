@@ -63,7 +63,7 @@ def runCommand(command):
             for f in fileList:
                 print(f)
     elif command == '7':
-        print('sadada')
+        viewFile(os.getcwd())
 
 def listCurrentDir(dirName):
     """Prints a list of the cwd's contents."""
@@ -126,9 +126,23 @@ def findFiles(target, path):
             os.chdir("..")
     return files
 
-def viewFile(target, path):
-    
-    
+def viewFile(currentDir):
+    """Prints the contents of the target file."""
+    while True:
+        print("Files in " + currentDir + ":")
+        for elements in os.listdir(currentDir): 
+            if os.path.isfile(elements):
+                print(elements)
+        targetFile = input("Enter a file name from these names: ")
+        if os.path.isfile(targetFile):
+            content = open(targetFile)
+            textContent = content.read()
+            print(textContent)
+            content.close()
+            break
+        else:
+            print("ERROR: target file doesn't exist or is a directory")
+        
 
 if __name__ == "__main__":
     main()
