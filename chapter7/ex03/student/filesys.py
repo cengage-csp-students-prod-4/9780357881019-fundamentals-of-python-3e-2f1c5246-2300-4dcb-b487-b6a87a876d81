@@ -8,9 +8,9 @@ and gathering information on files.
 
 import os, os.path
 
-QUIT = '7'
+QUIT = '8'
 
-COMMANDS = ('1', '2', '3', '4', '5', '6', '7')
+COMMANDS = ('1', '2', '3', '4', '5', '6', '7', '8')
 
 MENU = """1   List the current directory
 2   Move up
@@ -18,7 +18,8 @@ MENU = """1   List the current directory
 4   Number of files in the directory
 5   Size of the directory in bytes
 6   Search for a file name
-7   Quit the program"""
+7   View the contents of a file
+8   Quit the program"""
 
 def main():
     while True:
@@ -61,6 +62,8 @@ def runCommand(command):
         else:
             for f in fileList:
                 print(f)
+    elif command == '7':
+        print('sadada')
 
 def listCurrentDir(dirName):
     """Prints a list of the cwd's contents."""
@@ -122,6 +125,10 @@ def findFiles(target, path):
             files.extend(findFiles(target, os.getcwd()))
             os.chdir("..")
     return files
+
+def viewFile(target, path):
+    
+    
 
 if __name__ == "__main__":
     main()
