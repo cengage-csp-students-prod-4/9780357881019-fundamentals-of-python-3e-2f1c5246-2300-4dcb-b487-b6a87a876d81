@@ -11,11 +11,6 @@ def main():
 
 
 def printAll(seq):
-    print(
-        "---------------------------------------\n", \
-        "The current sequence: ", seq, \
-        "\n---------------------------------------"
-    )
     if seq:
         print(seq[0])
         printAll(seq[1:])
