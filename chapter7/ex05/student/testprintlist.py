@@ -6,8 +6,9 @@ A program to test Lee's 'printList()' function
 """
 
 def main():
-    _table = ["elem1", "elem2", 3, 4, 5.0, 3+3]
-    printAll(_table)
+    _string = "elem1 elem2 3 4 5.0 3+3"
+    printAll(_string)
+
 
 def printAll(seq):
     print(
