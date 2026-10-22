@@ -20,6 +20,8 @@ if __name__ == "__main__":
 
 '''
 Seperate code to actually test the printAll() function:
+(Not accepted by grader)
+
 
 def main():
     _table = ["elem1", "elem2", 3, 4, 5.0, 3+3]
