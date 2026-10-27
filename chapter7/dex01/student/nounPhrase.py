@@ -5,12 +5,19 @@ nouns = ["apple", "peach", "banana", "pear", "orange", "grape", "strawberry", "b
 #nounphrase = article [adjectivephrase] noun
 def nounPhrase():
     """Builds and returns a noun phrase."""
-    return random.choice(articles) + " " + \
-        adjectivePhrase() + " " + random.choice(nouns)
+    phrase = random.choice(articles) + " "
+    # The adjective phrase is optional
+    if random.randint(0, 1) == 1:
+        phrase += adjectivePhrase() + " "
+    return phrase + random.choice(nouns)
 
 #adjectivephrase = adjective [adjectivephrase]
 def adjectivePhrase():
     """Builds and returns an adjective phrase."""
-    return random.choice(adjectives) + " " + adjectivePhrase()
+    phrase = random.choice(adjectives)
+    # Base case: stop adding adjectives about half the time
+    if random.randint(0, 1) == 1:
+        phrase += " " + adjectivePhrase()
+    return phrase
 
 print(nounPhrase())
