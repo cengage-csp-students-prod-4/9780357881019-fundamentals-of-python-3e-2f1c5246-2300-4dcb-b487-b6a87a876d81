@@ -1,0 +1,12 @@
+
+Status: PASSED!
+Check: 1
+Test: The `myReduce` method returns a sum of [1, 2, 3, 4, 5].
+Reason: None
+Timestamp: 2026-10-27 15:44:01.750174
+
+Status: PASSED!
+Check: 2
+Test: The `myReduce` method returns a product of [1, 2, 3, 4, 5].
+Reason: None
+Timestamp: 2026-10-27 15:44:01.750539
