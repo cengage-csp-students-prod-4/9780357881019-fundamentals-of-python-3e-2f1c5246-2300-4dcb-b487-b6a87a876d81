@@ -6,9 +6,10 @@ a c-curve and draws a c-curve of that level.
 """
 
 from turtle import Turtle, tracer, update
+import random
 
 def cCurve(t, x1, y1, x2, y2, level):
-   
+   t.pencolor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
    def drawLine(x1, y1, x2, y2):
       """Draws a line segment between the endpoints."""
       t.up()
@@ -29,7 +30,6 @@ def main():
    t = Turtle()
    if level > 8:
       tracer(False)
-   t.pencolor("blue")
    t.speed(0)
    t.hideturtle()
    cCurve(t, 50, -50, 50, 50, level)
