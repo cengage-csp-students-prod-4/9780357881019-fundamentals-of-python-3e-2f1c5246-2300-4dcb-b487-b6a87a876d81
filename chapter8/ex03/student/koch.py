@@ -1,5 +1,5 @@
 """
-Program file: koch.py
+Program: koch.py
 Author: Michael Guillen
 
 This program prompts the user for the level of
