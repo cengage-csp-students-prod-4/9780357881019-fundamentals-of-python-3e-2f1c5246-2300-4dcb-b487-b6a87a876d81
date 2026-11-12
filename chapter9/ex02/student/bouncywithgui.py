@@ -8,12 +8,13 @@ Present a GUI window that computes ball's bounciness
 from breezypythongui import EasyFrame
 
 class BounceCalculator(EasyFrame):
-    """widnow that asks user for initial height of ball bounce, bounciness index, and # of bounces,
+    """window that asks user for initial height of ball bounce, bounciness index, and # of bounces,
     calculates the total distance it traveled"""
 
     def __init__(self):
-        EasyFrame.__init__(self, "Bounce Distance Calculator", width = 350, height = 200)
+        EasyFrame.__init__(self, "Bouncy", width = 350, height = 200)
 
+        # add labels
         self.addLabel("Initial height", row = 0, column = 0,
                       sticky = "W")
         self.intHeight = self.addFloatField(0.0, row = 0, column = 1)
@@ -27,7 +28,7 @@ class BounceCalculator(EasyFrame):
         self.addButton("Compute", 3, 1,
                        command = self.calculator)
 
-        self.addLabel("Total tax", 4, 0,
+        self.addLabel("Total distance", 4, 0,
                       sticky = "W")
         self.answerDisplay = self.addFloatField(0.0, 4, 1,
                                     state = "readonly")
