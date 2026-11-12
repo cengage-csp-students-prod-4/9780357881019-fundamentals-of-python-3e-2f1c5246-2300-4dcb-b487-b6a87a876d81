@@ -17,23 +17,29 @@ class BounceCalculator(EasyFrame):
         # add labels
         self.addLabel("Initial height", row = 0, column = 0,
                       sticky = "W")
-        self.intHeight = self.addFloatField(0.0, row = 0, column = 1)
         self.addLabel("Bounciness index", row = 1, column = 0,
                       sticky = "W")
-        self.bncIndx = self.addFloatField(value = 0.0, row = 1, column = 1)
         self.addLabel("Number of bounces", row = 2, column = 0,
                       sticky = "W")
-        self.numBounces = self.addIntegerField(value = 0, row = 2, column = 1)
-
-        self.addButton("Compute", 3, 1,
-                       command = self.calculator)
-
         self.addLabel("Total distance", 4, 0,
-                      sticky = "W")
+                              sticky = "W")
+
+        # add input and display fields
+        self.intHeight = self.addFloatField(0.0, row = 0, column = 1)
+        self.bncIndx = self.addFloatField(value = 0.0, row = 1, column = 1)
+        self.numBounces = self.addIntegerField(value = 0, row = 2, column = 1)
         self.answerDisplay = self.addFloatField(0.0, 4, 1,
                                     state = "readonly")
 
+        # add button to calculate
+        self.addButton("Compute", 3, 1,
+                       command = self.calculator)
+
+        
+
     def calculator(self):
+        """Calculate the distance of a ball using its drop height,
+        bounce index, and number of bounces"""
         dropHeight = self.intHeight.getNumber()
         bnceIndx = self.bncIndx.getNumber()
         numOfBncs = self.numBounces.getNumber()
