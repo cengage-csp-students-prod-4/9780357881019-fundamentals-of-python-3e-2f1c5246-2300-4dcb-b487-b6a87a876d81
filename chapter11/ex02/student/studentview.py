@@ -75,12 +75,23 @@ class StudentView(EasyFrame):
     def editScore(self):
         """Obtains a new score and its position from the user
         and updates the model and the view."""
-        return
+        try:
+            newPosition = self.prompterBox(title = "Edit score - Position",
+                                        promptString = "Position of the score:")
+            newScore = self.prompterBox(title = "Edit score - Score",
+                                        promptString = "New score:")
+            self.model.setScore(int(newPosition), int(newScore))
+            self.refreshData()
+        except ValueError:
+            pass
 
     def addScore(self):
         """Obtains a new score from the user,
         adds it to the model, and updates the view."""
-        return
+        score = self.prompterBox(title = "Add score",
+                                    promptString = "Score to add:")
+        self.model.addScore(int(score))
+        self.refreshData()
     
     def deleteScore(self):
         """Obtains the position of a score from the user,
@@ -95,4 +106,11 @@ class StudentView(EasyFrame):
         """Obtains the number of scores, lowest score,
         and highest score from the user, randomizes the model's scores,
         and updates the view."""
-        return
+        rndAmnt = self.prompterBox(title = "Randomize score - Amount",
+                                   promptString = "New amount of scores:")
+        lwr = self.prompterBox(title = "Randomize score - Lower limit",
+                                   promptString = "Lowest score:")
+        upr = self.prompterBox(title = "Randomize score - Upper limit",
+                                   promptString = "Highest score:")
+        self.model.randomizeScores(int(rndAmnt), int(lwr), int(upr))
+        self.refreshData()
