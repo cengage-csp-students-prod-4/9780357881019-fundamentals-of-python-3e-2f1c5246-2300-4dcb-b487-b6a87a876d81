@@ -32,7 +32,7 @@ def mode(lyst):
         if theDictionary[key] == theMaximum:
             result = key
             break
-    return result
+    return result #type: ignore
 
 def modes(lyst):
     """Returns the modes of a list of numbers."""
