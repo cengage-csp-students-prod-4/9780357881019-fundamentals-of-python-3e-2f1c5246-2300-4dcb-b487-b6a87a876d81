@@ -3,7 +3,7 @@ File: studentapp.py
 The application for editing and analyzing student scores.
 """
 
-from student import Student
+from student import Student # type: ignore
 from studentview import StudentView
 
 def main():
