@@ -13,7 +13,7 @@ def cleanColumn(frame, columnName):
     poppedCol = frame.pop(columnName)
     makes = []
     attempts = []
-    for val in poppedFG:
+    for val in poppedCol:
         makes.append(int(val.split("-")[0]))
         attempts.append(int(val.split("-")[1]))
     newPos = frame.columns.get_loc("FG%")
