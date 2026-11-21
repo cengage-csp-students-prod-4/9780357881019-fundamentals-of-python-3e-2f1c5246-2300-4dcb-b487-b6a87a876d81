@@ -4,6 +4,7 @@ The view for view and analyzing basketball player statistics.
 """
 
 from breezypythongui import EasyFrame
+import matplotlib.pyplot as plt
 import pandas as pd
 
 class HoopStatsView(EasyFrame):
@@ -12,7 +13,7 @@ class HoopStatsView(EasyFrame):
         """Creates and lays out window components
         to view and manipulate the model's data."""
         EasyFrame.__init__(self, title = "Basketball Stats")
-        self.setSize(600, 400)
+        self.setSize(600, 430)
         self.frame = frame
         self.dataArea = self.addTextArea(text = self.frame.to_string(), 
                                          row = 0,
@@ -22,18 +23,15 @@ class HoopStatsView(EasyFrame):
         # Create a panel for the radio buttons
         self.radioGroup = self.addRadiobuttonGroup(row = 1,
                                                    column = 0)
-        defaultRB = self.radioGroup.addRadiobutton(text = "MIN")
-        self.radioGroup.setSelectedButton(defaultRB)
-        self.radioGroup.addRadiobutton(text = "FG%",
-                                       command = self.analyze)
-        self.radioGroup.addRadiobutton(text = "FT%",
-                                       command = self.analyze)
-        self.radioGroup.addRadiobutton(text = "REB",
-                                       command = self.analyze)
-        self.radioGroup.addRadiobutton(text = "AST",
-                                       command = self.analyze)
-        self.radioGroup.addRadiobutton(text = "PTS",
-                                       command = self.analyze)
+        for column in self.frame.columns:
+            if self.frame.columns.get_loc(column) == 0:
+                defaultRB = self.radioGroup.addRadiobutton(text = column,
+                                                           command = self.analyze)
+                self.radioGroup.setSelectedButton(defaultRB)
+            else:
+                self.radioGroup.addRadiobutton(text = column,
+                                                command = self.analyze)
+        
         # Create a panel for the output fields
         statsPanel = self.addPanel(row = 1, column = 1)
         statsPanel.addLabel("Mean", row = 0, column = 0)            
@@ -65,5 +63,21 @@ class HoopStatsView(EasyFrame):
         self.meanFld.setNumber(column.mean())
         self.medianFld.setNumber(column.median())
         self.stdFld.setNumber(column.std())
+        self.plotGraph(columnLabel)
 
-    
+
+    def plotGraph(self, stat):
+        plt.clf()
+        games = []
+        statVals = []
+
+        for row in self.frame.index:
+            games.append(row+1)
+        for value in self.frame[stat]:
+            statVals.append(value)
+        plt.plot(games, statVals, marker = "o")
+        plt.title(stat + " Stats")
+        plt.xticks(games)
+        plt.xlabel("Games")
+        plt.ylabel(stat)
+        plt.show()
